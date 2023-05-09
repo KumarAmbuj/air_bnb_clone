@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>2 may attribute selector</title>
+    <style>
+        input[type="text"]{
+            border:1px dashed red;
+        }
+        input[type="email"]{
+            border:1px solid green;
+        }
+        input[type="number"]{
+            border:1px solid blue;
+        }
+        a[target="_blank"]{
+            color:red;
+        }
+        div[title~='relax']{
+            border:1px solid green;
+            background-color: red;
+        }
+        img[alt~='nature']{
+            height:200px;
+            width:200px;
+            border:2px dashed black;
+        }
+        
+        /*~ means having tech as text in title*/
+        img[alt~='tech']{
+            height:200px;
+            width:300px;
+            border:2px dashed black;
+        }
+        /* ^ means class starting with text start*/
+        span[class^='start']{
+            background-color: aqua;
+        }
+        /* * means class having  text abc anywhere*/
+        span[class*='abc']{
+            background-color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your name">
+    <input type="mail" placeholder="Enter your name">
+    <input type="number" placeholder="Enter your name">
+    <input type="url" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your name">
+<hr>
+    <a here="google.com" target="_blank">google</a>
+    <a here="flipkart.com" target="_self">flipkart</a>
+<hr>
+<div title="hey relax">hey this is div 1</div>
+<div title="relax">hey this is div 2</div>
+<div title="hello">hey this is div 2</div>
+<div title="heyrelax">hey this is div 3</div>
+<hr>
+<img src="img1.jpg" alt="nature pics">
+<img src="img3.jpg" alt="tech pictures">
+<img src="flipkart.png" alt="flipkart shopping site">
+<img src="twitter.png" alt="twitter social media">
+<hr>
+
+<span class="start">this is span</span>
+<span class="abstatab">this is span</span>
+<span class="nostart">this is span</span>
+
+<hr>
+<span class="abc">this is span</span>
+<span class="xhunjbc">this is span</span>
+<span class="nkabckhk">this is span</span>
+
+
+
+</body>
+</html>

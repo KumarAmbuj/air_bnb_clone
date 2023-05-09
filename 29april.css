@@ -1,0 +1,18 @@
+*{
+    margin:8px;
+}
+p{
+    background-color: rgb(14, 107, 107);
+}
+
+div{
+    background-color:aquamarine;
+    
+}
+span{
+    background-color: aqua;
+}
+p,div,span{
+    border: 2px solid red;
+    width:200px;
+}

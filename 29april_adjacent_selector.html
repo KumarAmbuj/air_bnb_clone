@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>29 april combinator selectors</title>
+    <style>
+        div + span{
+            color:red;
+            font-style: italic;
+        }
+        .divv ~ .sp{
+            color:green;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjacent selector</h1>
+    <div>
+        <h5>hellooooo</h5>
+        <p>hiiiiiiii</p>
+    </div>
+    
+    <span>first span after div</span><br>
+    <p>not in div</p>
+    <span>second span after div</span>
+
+    <section class="divv">
+          <p>hello this is div</p>
+          <span class="sp">hello this is span</span>
+    </section>
+
+    <span class="sp">hi this is first span after div</span><br>
+    <span class="sp">this is second span after div</span>
+
+
+</body>
+</html>

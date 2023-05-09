@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>29 april combinator selectors</title>
+    <style>
+        /*descendent selectoe*/
+        div p{
+            color:blue;
+            font-style: italic;
+        }
+        /*descendent selectoe*/
+
+        /*descendent selectoe*/
+        .divv .pcount{
+            color:red;
+        }
+        /*descendent selectoe*/
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Combinator selctor</h1>
+    <h3>1.Descendent selector<h/3>
+    <div>
+        <p>this is first paragraph</p>
+        <p>this is second paragraph</p>
+        <span>this is span</span>
+        <p>this is third paragraph</p>
+        <h6>this is heading six</h6>
+        <section>this can be<p>the paragraph inside</p> the heading five </section>
+        <p>this is <span>span</span> insde the paragraph</p>
+    </div>
+<hr>
+    <div class="divv">
+        <p class="pcount">this is para</p>
+        <span>this is inner span</span>
+        <p class="pcount">this is para</p>
+        <h4>this is heading 4</h4>
+
+    </div>
+</body>
+</html>

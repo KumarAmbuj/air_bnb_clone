@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>29 april combinator selectors</title>
+    <style>
+        div > span{
+            color:aqua;
+            font-style: italic;
+        }
+        .divv > .spann{
+            color:green;
+            font-family: monospace;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Child selector</h1>
+        <span>this is first span</span><br>
+        <span>this is second span</span>
+        <p>this is <span>span inside</span> paragraph</p>
+        <span>this is again a span</span>
+        <h5>this is<span> span inside</span> heading</h5>
+    </div>
+    <hr>
+
+    <div class="divv">
+        <p class="spann">hello</p>
+        <span class="spann">heyyyyy</span>
+        <p>this is <span class="spann">span inside </span>the paragraph</p>
+        <h4>this is span <span clss="spann">inside the</span> heading five</h4>
+    </div>
+
+</body>
+</html>

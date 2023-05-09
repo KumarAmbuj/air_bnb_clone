@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>2 may attribute selector</title>
+    <style>
+        .hoverme:hover{
+            
+            background-color:aqua;
+            color:red;
+            
+        }
+        .divv{
+            height:100px;
+            width:100px;
+            border:1px solid green;
+            background-color: whitesmoke;
+        }
+        a:visited{
+            color:green;
+        }
+        a:active{
+            color:red;
+            background-color:aqua;
+        }
+        a:hover{
+            color:yellowgreen;
+        }
+        
+        /* first child means first child of any element like div */
+        p:first-child{
+            background-color:aqua;
+            color:red;
+        }
+        /*
+        p:first-of-type{
+            background-color: bisque;
+            color:green;
+        }
+        */
+    </style>
+</head>
+<body>
+    
+<div class="hoverme divv">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, hic.
+</div>
+
+<div class="divv">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, hic.
+</div>
+
+<div class="divv">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, hic.
+</div>
+
+<a href="google.com">google</a>
+<hr>
+<hr>
+<p>first child</p>
+<p>second child</p>
+<div class="check">
+    <p>first child of class check</p>
+    <p>second child of class check</p>
+</div>
+<p>paragraph outside of the class check</p>
+
+<div>
+    <p>this is again first child</p>
+    <p>this is again second child</p>
+</div>
+
+<p>this is again first child</p>
+<p>this is again first child</p>
+
+
+
+</body>
+</html>
